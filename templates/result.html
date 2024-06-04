@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Results</title>
+</head>
+<body>
+    <h1>FINAL Results</h1>
+    <table border="2">
+        {% for key,value in result.items() %}
+            <tr>
+                <th>{{ key }}</th>
+                <th>{{ value }}</th>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
+
+
+{# <!-- Your score is {{  }}
+    {% if >=50 %}
+    <h1>You've Passed</h1>
+    {% else %}
+    <h1>You've Failed</h1>
+    {% endif %} -->
+    <!-- The Output is {{  }} --> #}
